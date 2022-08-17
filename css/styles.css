@@ -48,6 +48,10 @@ body {
 
 /* STUDIO PAGE */
 /* header styles */
+.header .container {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -174,7 +178,6 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     border: 1px solid transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
@@ -186,12 +189,12 @@ body {
 .button:focus {
     background-color: var(--background-grey-color);
     color: var(--title-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Features section */
 .features {
     padding-bottom: 47px;
-    background-color: var(--background-light-color);
 }
 
 .visually-hidden {
@@ -206,7 +209,7 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
-  
+
 .grid {
     display: flex;
     color: var(--primary-text-color);
@@ -246,8 +249,8 @@ body {
 .specialization {
     padding-top: 47px;
     text-align: center;
-    background-color: var(--background-light-color);
 }
+
 .gallery {
     display: flex;
     color: var(--primary-text-color);
@@ -356,6 +359,7 @@ body {
 
 
 /*PORTFOLIO PAGE */
+
 /* Projects section */
 .portfolio {
     text-align: center;
@@ -390,7 +394,7 @@ body {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 34px;
+    margin-top: 50px;
     color: var(--primary-text-color);
 }
 
@@ -415,8 +419,11 @@ body {
     width: 100%;
 }
 
+.wrapper {
+    padding: 20px 24px;
+}
+
 .portfolio-list__headling {
-    margin-top: 20px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -427,7 +434,6 @@ body {
 
 .portfolio-list__text {
     margin-top: 4px;
-    margin-bottom: 20px;
     color: inherit;
     font-weight: 400;
     font-size: 16px;
