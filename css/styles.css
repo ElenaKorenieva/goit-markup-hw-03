@@ -22,14 +22,14 @@ h1, h2, h3, h4, p {   margin-top: 0;   margin-bottom: 0; }  ul, ol {   margin-to
 
 html {
     box-sizing: border-box;
-  }
+}
   
 
   *,
   *::before,
   *::after {
     box-sizing: inherit;
-  }
+}
   
 
 body {
@@ -48,9 +48,6 @@ body {
 
 /* STUDIO PAGE */
 /* header styles */
-.header {
-}
-
 .main-nav {
     display: flex;
     align-items: center;
@@ -77,9 +74,6 @@ body {
 
 .header__list {
     display: flex;
-}
-
-.header__item { 
 }
 
 .header__item:not(:last-child) {
@@ -135,17 +129,8 @@ body {
 /* Main content */
 
 /* Section common properties */
-.dark {
-    background-color: var(--background-dark-color);
-    color: var(--primary-white-color);
-}
-
-.light {
-    background-color: var(--background-light-color);
-}
-
-.grey {
-    background-color: var(--background-grey-color);
+.section {
+    padding: 94px 0;
 }
 
 .headling {
@@ -159,12 +144,12 @@ body {
 
 /* Hero section */
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
-.centered {
+    display: flex;
+    min-height: 600px;
+    align-items: center;
     text-align: center;
+    background-color: var(--background-dark-color);
+    color: var(--primary-white-color);
 }
 
 .hero_headling {
@@ -173,7 +158,7 @@ body {
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.4;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -205,8 +190,10 @@ body {
 
 /* Features section */
 .features {
-    padding: 94px 0 118px 0;
+    padding-bottom: 47px;
+    background-color: var(--background-light-color);
 }
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -218,9 +205,8 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  }
+}
   
-
 .grid {
     display: flex;
     color: var(--primary-text-color);
@@ -258,8 +244,9 @@ body {
 
 /* Specialization section */
 .specialization {
-    padding-bottom: 94px;
+    padding-top: 47px;
     text-align: center;
+    background-color: var(--background-light-color);
 }
 .gallery {
     display: flex;
@@ -282,8 +269,8 @@ body {
 
 /* Our Team section */
 .our-team {
-    padding: 94px 0;
     text-align: center;
+    background-color: var(--background-grey-color);
 }
 
 .cards {
@@ -371,7 +358,6 @@ body {
 /*PORTFOLIO PAGE */
 /* Projects section */
 .portfolio {
-    padding: 94px 0;
     text-align: center;
 }
 
